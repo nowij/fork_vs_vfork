@@ -50,7 +50,7 @@ int main(int argc, char **argv)
 	if (atoi(argv[2]) == 1) { // vfork
 		pid = vfork();
 		if (pid < 0) {
-			printf("failed to create a new process\n");
+			printf("failed to create a new process!\n");
 		} else if (pid == 0) {
 			//printf("I'm child pid=%d\n", getpid());
 			exit(0);
