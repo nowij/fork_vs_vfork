@@ -4,7 +4,7 @@ node {
         git 'https://github.com/jwpark-sungshin/fork_vs_vfork.git'
     }
     stage('Build image') {
-        app = docker.build("pjbear/prbasedtest")
+        app = docker.build("pjbear/test")
     }
     stage('Test image') {
         app.inside {
