@@ -1,7 +1,7 @@
 node {
     def app
     stage('Clone repository') {
-        git 'https://github.com/nowijdl/fork_vs_vfork.git' 
+        git 'https://github.com/nowij/fork_vs_vfork.git' 
     }
     stage('Build image') {
         app = docker.build("nowijdl/test")
